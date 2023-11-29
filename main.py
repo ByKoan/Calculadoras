@@ -1,4 +1,4 @@
-print("Calculadora Made By Diego"
+print("Calculadora Made By Koan"
       "\n1.- Suma"
       "\n2.- Resta"
       "\n3.- Multiplicacion"
