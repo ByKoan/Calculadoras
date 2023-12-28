@@ -1,0 +1,39 @@
+#include <stdio.h> //Cabezera standard input output
+
+int main(){ //Funcion principal 
+
+    puts("CalculadoraV1 Made By Koan");
+
+    float num1 = 0, num2 = 0; //Declaramos variables num1 y num2 como float
+    //float num2 = 0;
+    int numero_opcion = 0; //Declaramos variable numero_opcion como entero
+
+    puts("Ingrese el primer numero aqui:"); //Pedimos que ingrese el primer numero 
+    scanf("%f", &num1);
+
+    puts("Ingrese el segundo numero aqui:"); //Pedimos que ingrese el segundo numero
+    scanf("%f", &num2);
+
+    puts("Elije una opcion del 1-5 para operar los valores:"); //Pedimos que ingrese un numero del 1-5
+    scanf("%d", &numero_opcion);
+
+    if (numero_opcion == 1){ //If para las operaciones 
+        printf("El resultado de la suma es: %f", num1 + num2); //Suma
+    }
+    else if (numero_opcion == 2){
+        printf("El resultado de la resta es: %f", num1 - num2); //Resta
+    }
+    else if (numero_opcion == 3){
+        printf("El resultado de la multiplicacion es: %f", num1 * num2); //Multiplicaciones
+    }
+    else if (numero_opcion == 4){
+        printf("El resultado de la division es: %f", num1 / num2); //Division 
+    }
+    else if (numero_opcion == 5){
+        printf("El resultado del modulo es: %f", (int)num1 % (int)num2); //Modulo 
+    }
+    else {
+        puts("ERROR: Elije una opcion valida del 1 - 5."); //Opcion no valida 
+    }
+    return 0; //Retornamos 0
+}
